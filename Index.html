@@ -14,15 +14,15 @@
                 <li><a href="#Introduction" class="nav-link">Introduction</a></li>
                 <li><a href="#CSS_Syntax" class="nav-link">CSS Syntax</a></li>
                 <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a></li>
-                <li><a href="#CSS_Comments" class="nav-link">CSS Cmments</a></li>
+                <li><a href="#CSS_Comments" class="nav-link">CSS Comments</a></li>
                 <li><a href="#CSS_Backgrounds" class="nav-link">CSS Backgrounds</a></li>
-                <li><a href="#HTML_Comments" class="nav-link">HTML Comments</a></li>
-                <li><a href="#HTML_CSS" class="nav-link">HTML CSS</a></li>
-                <li><a href="#HTML_Links" class="nav-link">HTML Links</a></li>
-                <li><a href="#HTML_Images" class="nav-link">HTML Images</a></li>
-                <li><a href="#HTML_Lists" class="nav-link">HTML Lists</a></li>
-                <li><a href="#HTML_Classes" class="nav-link">HTML Classes</a></li>
-                <li><a href="#HTML_Ids" class="nav-link">HTML Ids</a></li>
+                <li><a href="#CSS_Margins" class="nav-link">CSS Margins</a></li>
+                <li><a href="#CSS_Paddings" class="nav-link">CSS Paddings</a></li>
+                <li><a href="#CSS_Box_Model" class="nav-link">CSS Box Model</a></li>
+                <li><a href="#CSS_Lists" class="nav-link">CSS Lists</a></li>
+                <li><a href="#CSS_Display" class="nav-link">CSS Display</a></li>
+                <li><a href="#CSS_Position" class="nav-link">CSS Position</a></li>
+                <li><a href="#CSS_Psuedo_Classes" class="nav-link">CSS Psuedo Classes</a></li>
             </ul>
             
         </nav>
@@ -67,7 +67,6 @@
                         text-align: center;
                       }
                 </code>
-                <li></li>
             </section>
             <section class="main-section" id="CSS_Selectors">
                 <header>CSS Selectors</header>
@@ -141,62 +140,296 @@
             </section>
             <section class="main-section" id="CSS_Backgrounds">
                 <header>CSS Backgrounds</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+                <p>The CSS background properties are used to define the background effects for elements.</p>
+                <p>Following are some background properties:</p>
+                <ul>
+                    <li>background-color</li>
+                    <code>
+                        body {
+                            background-color: lightblue;
+                        }
+                    </code>
+                    <li>background-image</li>
+                    <code>
+                        body {
+                            background-image: url("paper.gif");
+                          }
+                    </code>
+                    <li>background-repeat</li>
+                    <code>
+                        body {
+                            background-image: url("img_tree.png");
+                            background-repeat: no-repeat;
+                          }                          
+                    </code>
+                    <li>background-attachment</li>
+                    <code>
+                        body {
+                            background-image: url("img_tree.png");
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                          }                          
+                    </code>
+                    <li>background-position</li>
+                    <code>
+                        body {
+                            background-image: url("img_tree.png");
+                            background-repeat: no-repeat;
+                            background-position: right top;
+                            background-attachment: fixed;
+                          }                          
+                    </code>
+                </ul>
+                <p>To shorten the code, it is also possible to specify all the background properties
+                    in one single property. This is called a shorthand property.
+                </p>
+                <code>
+                    body {
+                        background: #ffffff url("img_tree.png") no-repeat right top;
+                    }
+                </code>
             </section>
-            <section class="main-section" id="HTML_Comments">
-                <header>HTML Comments</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Margins">
+                <header>CSS Margins</header>
+                <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+                <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side
+                    of an element (top, right, bottom, and left).
+                </p>
+                <p>CSS has properties for specifying the margin for each side of an element:</p>
+                <ul>
+                    <li>margin-top</li>
+                    <li>margin-right</li>
+                    <li>margin-bottom</li>
+                    <li>margin-left</li>
+                </ul>
+                <code>
+                    p {
+                        margin-top: 100px;
+                        margin-bottom: 100px;
+                        margin-right: 150px;
+                        margin-left: 80px;
+                    }
+                </code>
+                <p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+                <code>
+                    p {
+                        margin: 25px 50px 75px 100px;
+                    }
+                </code>
             </section>
-            <section class="main-section" id="HTML_CSS">
-                <header>HTML CSS</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Paddings">
+                <header>CSS Paddings</header>
+                <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+                <p>
+                    With CSS, you have full control over the padding. There are properties for setting
+                    the padding for each side of an element (top, right, bottom, and left).
+                </p>
+                <p>CSS has properties for specifying the padding for each side of an element:</p>
+                <ul>
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-bottom</li>
+                    <li>padding-left</li>
+                </ul>
+                <code>
+                    div {
+                        padding-top: 50px;
+                        padding-right: 30px;
+                        padding-bottom: 50px;
+                        padding-left: 80px;
+                    }
+                </code>
+                <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+                <code>
+                    div {
+                        padding: 25px 50px 75px 100px;
+                    }
+                </code>
             </section>
-            <section class="main-section" id="HTML_Links">
-                <header>HTML Links</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Box_Model">
+                <header>CSS Box Model</header>
+                <p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+                <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins,
+                    borders, padding, and the actual content.
+                </p>
+                <p>Explanation of the different parts:</p>
+                <dl>
+                    <dt>Content </dt>
+                    <dd>The content of the box, where text and images appear</dd>
+                    <dt>Padding</dt>
+                    <dd>Clears an area around the content. The padding is transparent</dd>
+                    <dt>Border</dt>
+                    <dd>A border that goes around the padding and content</dd>
+                    <dt>Margin</dt>
+                    <dd>Clears an area outside the border. The margin is transparent</dd>
+                </dl>
+                <p>The box model allows us to add a border around elements, and to define space between elements. </p>
+                <code>
+                    div {
+                        width: 300px;
+                        border: 15px solid green;
+                        padding: 50px;
+                        margin: 20px;
+                      }
+                </code>
             </section>
-            <section class="main-section" id="HTML_Images">
-                <header>HTML Images</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Lists">
+                <header>CSS Lists</header>
+                <p>In HTML, there are two main types of lists:</p>
+                <ul>
+                    <li>unordered lists - the list items are marked with bullets</li>
+                    <li>ordered lists - the list items are marked with numbers or letters</li>
+                </ul>
             </section>
-            <section class="main-section" id="HTML_Lists">
-                <header>HTML Lists</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Display">
+                <header>CSS Display</header>
+                <p>The display property specifies if/how an element is displayed.</p>
+                <p>Every HTML element has a default display value depending on what type of element it is.
+                    The default display value for most elements is block or inline.
+                </p>
+                <dl>
+                    <dt>Block-level Elements</dt>
+                    <dd>A block-level element always starts on a new line and takes up the full width
+                        available (stretches out to the left and right as far as it can).
+                    </dd>
+                    <p>Examples of block-level elements:</p>
+                    <ul>
+                        <li>div</li>
+                        <li>h1-h6</li>
+                        <li>p</li>
+                        <li>form</li>
+                        <li>header</li>
+                        <li>footer</li>
+                    </ul>
+                </dl>
+                <dl>
+                    <dt>Inline Elements</dt>
+                    <dd>An inline element does not start on a new line and only takes up as much width as necessary.</dd>
+                    <p>Examples of inline elements:</p>
+                    <ul>
+                        <li>span</li>
+                        <li>a</li>
+                        <li>img</li>
+                    </ul>
+                </dl>
+                <header>Display: none;</header>
+                <p>display: none; is commonly used with JavaScript to hide and show elements without
+                    deleting and recreating them. Take a look at our last example on this page if
+                    you want to know how this can be achieved.
+                </p>
             </section>
-            <section class="main-section" id="HTML_Classes">
-                <header>HTML Classes</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Position">
+                <header>CSS Position</header>
+                <p>The position property specifies the type of positioning method used for an element.</p>
+                <p>There are five different position values:</p>
+                <ul>
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>fixed</li>
+                    <li>sticky</li>
+                </ul>
+                <p>Elements are then positioned using the top, bottom, left, and right properties.
+                    However, these properties will not work unless the position property is set 
+                    first. They also work differently depending on the position value.
+                </p>
+                <header>position: static;</header>
+                <p>HTML elements are positioned static by default.Static positioned elements are
+                    not affected by the top, bottom, left, and right properties.
+                </p>
+                <p>An element with position: static; is not positioned in any special way; it is
+                    always positioned according to the normal flow of the page:
+                </p>
+                <code>
+                    div.static {
+                        position: static;
+                        border: 3px solid #73AD21;
+                    }
+                </code>
+                <header>position: relative;</header>
+                <p>An element with position: relative; is positioned relative to its normal position.
+                    Setting the top, right, bottom, and left properties of a relatively-positioned
+                    element will cause it to be adjusted away from its normal position. 
+                    Other content will not be adjusted to fit into any gap left by the element.
+                </p>
+                <code>
+                    div.relative {
+                        position: relative;
+                        left: 30px;
+                        border: 3px solid #73AD21;
+                    }
+                </code>
+                <header>position: fixed;</header>
+                <p>An element with position: fixed; is positioned relative to the viewport, which 
+                    means it always stays in the same place even if the page is scrolled. The top, 
+                    right, bottom, and left properties are used to position the element.
+                </p>
+                <p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+                <code>
+                    div.fixed {
+                        position: fixed;
+                        bottom: 0;
+                        right: 0;
+                        width: 300px;
+                        border: 3px solid #73AD21;
+                    }
+                </code>
+                <header>position: absolute;</header>
+                <p>An element with position: absolute; is positioned relative to the nearest 
+                    positioned ancestor (instead of positioned relative to the viewport, like fixed).
+                </p>
+                <p>A "positioned" element is one whose position is anything except static.</p>
+                <code>
+                    div.relative {
+                        position: relative;
+                        width: 400px;
+                        height: 200px;
+                        border: 3px solid #73AD21;
+                    }
+                      
+                    div.absolute {
+                        position: absolute;
+                        top: 80px;
+                        right: 0;
+                        width: 200px;
+                        height: 100px;
+                        border: 3px solid #73AD21;
+                    }
+                </code>
+                <header>position: sticky;</header>
+                <p>An element with position: sticky; is positioned based on the user's scroll position.</p>
+                <p>A sticky element toggles between relative and fixed, depending on the scroll 
+                    position. It is positioned relative until a given offset position is met in 
+                    the viewport - then it "sticks" in place (like position:fixed).
+                </p>
+                <code>
+                    div.sticky {
+                        position: -webkit-sticky; /* Safari */
+                        position: sticky;
+                        top: 0;
+                        background-color: green;
+                        border: 2px solid #4CAF50;
+                    }
+                </code>
             </section>
-            <section class="main-section" id="HTML_Ids">
-                <header>HTML Ids</header>
-                <p></p>
-                <p></p>
-                <code></code>
-                <li></li>
+            <section class="main-section" id="CSS_Psuedo_Classes">
+                <header>CSS Psuedo Classes</header>
+                <p>A pseudo-class is used to define a special state of an element.</p>
+                <p>For example, it can be used to:</p>
+                <ul>
+                    <li>For example, it can be used to:</li>
+                    <li>Style visited and unvisited links differently</li>
+                    <li>Style an element when it gets focus</li>
+                </ul>
+                <p>The syntax of pseudo-classes:</p>
+                <code>
+                    selector:pseudo-class {
+                        property: value;
+                    }                      
+                </code>
             </section>
         </main>
     </div>
-    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 </body>
 </html>
