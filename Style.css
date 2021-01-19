@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 290px;
+    color: #1e1e22;
+    background-color: #f6f6f6;
+    font-family: poppins;
+}
+
+#Container {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+}
+
+#navbar {
+    width: 300px;
+    height: 100%;
+    min-width: 290px;
+    background-color: bisque;
+    position: fixed;
+    border-right: solid;
+    top: 0;
+    left: 0;
+}
+
+header {
+    font-size: 34px;
+    margin: 10px;
+    text-align: center;
+}
+
+#navbar ul {
+    height: 82%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    border-top: 1px solid black;
+    color: #4d4e53;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: #4d4e53;
+    padding: 20px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+}
+
+#main-doc header {
+    background-color: #dddcdc;
+}
+
+.main-section p {
+    padding: 10px;
+}
+
+.main-section li {
+    margin: 10px 0px 0px 50px;
+}
+
+.main-section dt {
+    font-size: 22px;
+    padding: 20px 0px 10px 50px;
+}
+
+.main-section dd {
+    padding: 20px 0px 10px 50px;
+}
+
+#CSS_Position header:first-of-type {
+    background-color: #dddcdc;
+    text-align: center;
+}
+
+#CSS_Position header {
+    text-align: left;
+    padding-left: 10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #c0bdbd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
